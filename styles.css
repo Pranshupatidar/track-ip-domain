@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.75em;
+  overflow: hidden;
+}
+
+.search-area {
+  margin: 0;
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -10em;
+  z-index: 1;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+}
+
+.search-bar {
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box {
+  padding: 1em;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 0;
+  flex-grow: 1;
+}
+
+.search-btn {
+  cursor: pointer;
+  padding: 13px 20px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border: 0;
+  margin: 0;
+  background: #000;
+  font-size: 1.5em;
+}
+
+.search-box:focus,
+.search-btn:focus {
+  outline: none;
+}
+
+.search-btn:active {
+  transform: scale(0.95);
+}
+
+.search-btn:hover {
+  background-color: hsl(0, 0%, 17%);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 14px;
+  position: relative;
+  z-index: 1;
+  padding: 2em 1em;
+}
+
+.el {
+  text-align: center;
+  padding: 0 0.5em;
+  margin: 0 0 1em;
+}
+
+.el:last-child {
+  margin-bottom: 0;
+}
+
+.el h5 {
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 2px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.el h2 {
+  margin: 0;
+  margin-top: 5px;
+}
+
+#mapid {
+  height: 70vh;
+  z-index: 0;
+}
+
+@media (min-width: 750px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .search-area {
+    margin-bottom: -4em;
+    display: flex;
+  }
+
+  .search-bar {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-box {
+    font-size: 1em;
+  }
+
+  .details {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .el {
+    text-align: left;
+  }
+
+  .vl {
+    margin: auto 0;
+    border-right: 1.5px solid hsl(0, 0%, 59%);
+    height: 70px;
+  }
+}

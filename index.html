@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>IP Address Tracker</title>
+
+</head>
+<body>
+  
+  <div class="search-area">
+    <div class="container">
+      <h1>IP Address Tracker</h1> 
+    <div class="search-bar">
+      <input type="text" placeholder="Search for any IP address or domain" class="search-box">
+      <button type="submit" class="search-btn"><img src="./images/icon-arrow.svg"></img></button>
+    </div>
+    <div class="details">
+      <div class="el ip">
+        <h5>IP ADDRESS</h5>
+        <h2 id="ip">Loading...</h2>
+      </div>
+      <div class="vl"></div>
+      <div class="el location">
+        <h5>LOCATION</h5>
+        <h2 id="loc">Loading...</h2>
+      </div>
+      <div class="vl"></div>
+      <div class="el timezone">
+        <h5>TIMEZONE</h5>
+        <h2 id="timezone">Loading...</h2>
+      </div>
+      <div class="vl"></div>
+      <div class="el isp">
+        <h5>ISP</h5>
+        <h2 id="isp">Loading...</h2>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="map-area">
+    <div id="mapid"></div>
+  </div>
+  
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+<script src="script.js"></script>   
+</body>
+</html>
